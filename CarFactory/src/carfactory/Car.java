@@ -7,7 +7,7 @@ package carfactory;
  */
 public class Car {
 	private String make;
-	private int model;
+	private String model;
 	private int mileage;
 	/**
 	 * this is constructor for class car with 3 parameters
@@ -15,7 +15,7 @@ public class Car {
 	 * @param model1 to know the year of manufacture
 	 * @param mileage to know what is the mileage.
 	 */
-	public Car(String make1,int model1,int mileage1) {
+	public Car(String make1,String model1,int mileage1) {
 		setMake(make1);
 		setModel(model1);
 		setMileage(mileage1);
@@ -33,7 +33,7 @@ public class Car {
 	 */
 	public Car(String make1) {
 		make = make1;
-		setModel(2000);	//default values if only make is given
+		setModel("Basic");	//default values if only make is given
 		setMileage(20);	
 	}
 	/**
@@ -41,7 +41,7 @@ public class Car {
 	 * @param make1
 	 * @param model1
 	 */
-	public Car(String make1,int model1) {
+	public Car(String make1,String model1) {
 		make=make1;
 		model=model1;
 		setMileage(20);
@@ -63,15 +63,15 @@ public class Car {
 	/**getter method for Model
 	 * @return the model
 	 */
-	public int getModel() {
+	public String getModel() {
 		return model;
 	}
 
 	/**setter method for model
-	 * @param model the model to set
+	 * @param model1 the model to set
 	 */
-	public void setModel(int model) {
-		this.model = model;
+	public void setModel(String model1) {
+		this.model = model1;
 	}
 
 	/**getter method for mileage
@@ -90,8 +90,8 @@ public class Car {
 	
 	
 	public String toString() {
-		return "CAR is made by "+make+" company in the year "+model+" "
-				+ "and its approximate mileage is "+mileage+"  ";
+		return "CAR is made by "+make+",model is "+model+" "
+				+ ", its approximate mileage is "+mileage+" ";
 		
 	}
 
