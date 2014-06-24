@@ -3,23 +3,26 @@
  */
 package carfactory;
 
-/**This class is to assemble the car with our own features.
- * @author vamshikrishna
- *06.21.201
+/**
+ * This class is to assemble the car with our own features.
+ * 
+ * @author vamshikrishna 06.21.201
  */
-public class CarAssembler extends Car {
+public class CarAssembler {
 	/**
 	 * @see int numberOfGears
 	 * @see String typeOfGearTranmission
 	 * @see int year
 	 * @see String navigationSystem.
 	 */
-	private  int numberOfGears;
-	private  String typeOfGearTransmission;
-	private  int year;
-	private  String navigationSystem;
+	private static int numberOfGears;
+	private static String typeOfGearTransmission;
+	private static int year;
+	private static String navigationSystem;
+
 	/**
 	 * constructor with full parameters
+	 * 
 	 * @param make1
 	 * @param model1
 	 * @param mileage1
@@ -28,17 +31,19 @@ public class CarAssembler extends Car {
 	 * @param year1
 	 * @param navigationSystem1
 	 */
-	public CarAssembler(String make1,String model1,int mileage1,int numberOfGears1,
-			String typeOfGearTransmission1,int year1,String navigationSystem1) {
-		super(make1, model1, mileage1);
+	public CarAssembler(int numberOfGears1, String typeOfGearTransmission1,
+			int year1, String navigationSystem1) {
+
 		setNumberOfGears(numberOfGears1);
 		setTypeOfGearTransmission(typeOfGearTransmission1);
 		setYear(year1);
 		setNavigationSystem(navigationSystem1);
-		
+
 	}
+
 	/**
-	 * constructor with only six parameterss
+	 * constructor with only 3 parameterss
+	 * 
 	 * @param make1
 	 * @param model1
 	 * @param mileage1
@@ -46,121 +51,168 @@ public class CarAssembler extends Car {
 	 * @param typeOfGearTransmission1
 	 * @param year1
 	 */
-	public CarAssembler(String make1,String model1,int mileage1,int numberOfGears1,
-			String typeOfGearTransmission1,int year1) {
-		super(make1, model1, mileage1);
+	public CarAssembler(int numberOfGears1, String typeOfGearTransmission1,
+			int year1) {
+
 		setNumberOfGears(numberOfGears1);
 		setTypeOfGearTransmission(typeOfGearTransmission1);
 		setYear(year1);
-		
+
 	}
+
 	/**
-	 * constructor with only five parameters
+	 * constructor with only 2 parameters
+	 * 
 	 * @param make1
 	 * @param model1
 	 * @param mileage1
 	 * @param numberOfGears1
 	 * @param typeOfGearTransmission1
 	 */
-	public CarAssembler(String make1,String model1,int mileage1,int numberOfGears1,
-			String typeOfGearTransmission1) {
-		super(make1, model1, mileage1);
+	public CarAssembler(int numberOfGears1, String typeOfGearTransmission1) {
+
 		setNumberOfGears(numberOfGears1);
 		setTypeOfGearTransmission(typeOfGearTransmission1);
 	}
+
 	/**
-	 * constructor with only four parameters
+	 * constructor with single parameter
+	 * 
 	 * @param make1
 	 * @param model1
 	 * @param mileage1
 	 * @param numberOfGears1
 	 */
-	public CarAssembler(String make1,String model1,int mileage1,int numberOfGears1) {
-		super(make1, model1, mileage1);
+	public CarAssembler(int numberOfGears1) {
+
 		setNumberOfGears(numberOfGears1);
 	}
-	/**
-	 * @param make1
-	 * @param model1
-	 * @param mileage1
-	 */
-	public CarAssembler(String make1, String model1, int mileage1) {
-		super(make1, model1, mileage1);
-	}
 
+	
 	/**
 	 * Empty constructor
 	 */
 	public CarAssembler() {
 	}
 
-	/**constructor with only one parameter
-	 * @param make1
-	 */
-	public CarAssembler(String make1) {
-		super(make1);
-	}
-
-	/**constructor with only two parameters
-	 * @param make1
-	 * @param model1
-	 */
-	public CarAssembler(String make1, String model1) {
-		super(make1, model1);
-	}
 	
-	
-	
-	
-	
-	
-	/**getter method for number of gears
+	/**
+	 * getter method for number of gears
+	 * 
 	 * @return the numberOfGears
 	 */
 	public int getNumberOfGears() {
 		return numberOfGears;
 	}
-	/** setter method for numberofGears
-	 * @param numberOfGears the numberOfGears to set
+
+	/**
+	 * setter method for numberofGears
+	 * 
+	 * @param numberOfGears
+	 *            the numberOfGears to set
 	 */
-	public void setNumberOfGears(int numberOfGears) {
-		this.numberOfGears = numberOfGears;
+	public static  void setNumberOfGears(int numberOfGears1) {
+		numberOfGears = numberOfGears1;
 	}
-	/**getter method for getTypeOfGearTransmission
+
+	/**
+	 * getter method for getTypeOfGearTransmission
+	 * 
 	 * @return the typeOfGearTransmission
 	 */
 	public String getTypeOfGearTransmission() {
 		return typeOfGearTransmission;
 	}
-	/**setter method for getTypeOfGearTransmission
-	 * @param typeOfGearTransmission the typeOfGearTransmission to set
+
+	/**
+	 * setter method for getTypeOfGearTransmission
+	 * 
+	 * @param typeOfGearTransmission
+	 *            the typeOfGearTransmission to set
 	 */
-	public void setTypeOfGearTransmission(String typeOfGearTransmission) {
-		this.typeOfGearTransmission = typeOfGearTransmission;
+	public static void setTypeOfGearTransmission(String typeOfGearTransmission1) {
+		typeOfGearTransmission = typeOfGearTransmission1;
 	}
-	/**getter method for year
+
+	/**
+	 * getter method for year
+	 * 
 	 * @return the year
 	 */
 	public int getYear() {
 		return year;
 	}
-	/**setter method for year
-	 * @param year the year to set
+
+	/**
+	 * setter method for year
+	 * 
+	 * @param year
+	 *            the year to set
 	 */
-	public void setYear(int year) {
-		this.year = year;
-	}
-	/**getter method for NavigationSystem
-	 * @return the navigationSystem
-	 */
-	public  String getNavigationSystem() {
-		return navigationSystem;
-	}
-	/**setter method for NavigationSystem
-	 * @param navigationSystem the navigationSystem to set
-	 */
-	public void setNavigationSystem(String navigationSystem) {
-		this.navigationSystem = navigationSystem;
+	public static void setYear(int year1) {
+		year = year1;
 	}
 
+	/**
+	 * getter method for NavigationSystem
+	 * 
+	 * @return the navigationSystem
+	 */
+	public String getNavigationSystem() {
+		return navigationSystem;
+	}
+
+	/**
+	 * setter method for NavigationSystem
+	 * 
+	 * @param navigationSystem
+	 *            the navigationSystem to set
+	 */
+	public static void setNavigationSystem(String navigationSystem1) {
+		navigationSystem = navigationSystem1;
+	}
+
+	
+	public static void assemble(int numberOfGears1, String typeOfGearTransmission1,
+			int year1, String navigationSystem1) {
+
+		setNumberOfGears(numberOfGears1);
+		setTypeOfGearTransmission(typeOfGearTransmission1);
+		setYear(year1);
+		setNavigationSystem(navigationSystem1);
+
+	}
+
+	public static void assemble(int numberOfGears1, String typeOfGearTransmission1,
+							int year1) {
+
+		setNumberOfGears(numberOfGears1);
+		setTypeOfGearTransmission(typeOfGearTransmission1);
+		setYear(year1);
+		setNavigationSystem("Available");
+
+	}
+	public static void assemble(int numberOfGears1, String typeOfGearTransmission1) {
+
+		setNumberOfGears(numberOfGears1);
+		setTypeOfGearTransmission(typeOfGearTransmission1);
+		setYear(2014);
+		setNavigationSystem("Available");
+
+	}
+	public static void assemble(int numberOfGears1) {
+
+		setNumberOfGears(numberOfGears1);
+		setTypeOfGearTransmission("Automatic");
+		setYear(2014);
+		setNavigationSystem("Available");
+
+	}
+	
+	public String toString() {
+		return "number of gears = "+getNumberOfGears()+
+				" ,transmission type = "+getTypeOfGearTransmission()
+				+" ,year= "+getYear()+" navigation sys = "+getNavigationSystem(); 
+		
+	}
 }
