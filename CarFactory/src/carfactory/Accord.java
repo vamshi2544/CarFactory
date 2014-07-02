@@ -9,7 +9,7 @@ package carfactory;
  */
 public class Accord extends Car {
 	
-	static int speed;
+	private int speed;
 	
 	/**
 	 * @param make1

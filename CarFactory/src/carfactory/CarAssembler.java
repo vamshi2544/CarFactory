@@ -3,6 +3,8 @@
  */
 package carfactory;
 
+import java.util.ArrayList;
+
 /**
  * This class is to assemble the car with our own features.
  * 
@@ -19,6 +21,7 @@ public class CarAssembler {
 	private static String typeOfGearTransmission;
 	private static int year;
 	private static String navigationSystem;
+	private static ArrayList<Car> carList;
 
 	/**
 	 * constructor with full parameters
@@ -215,4 +218,28 @@ public class CarAssembler {
 				+" ,year= "+getYear()+" navigation sys = "+getNavigationSystem(); 
 		
 	}
-}
+	/**
+	 *  Return the car that manufactured in specific year
+	 *  
+	 * @param yearOfManufactur year that car manufactured
+	 */
+	public static Car getCar(String yearOfManufactur) {
+	    Car car1 = null;
+		for(Car car:carList) {
+			if(yearOfManufactur.equalsIgnoreCase(car.getModel())) {
+				car1 = car;
+			}
+		}
+		return car1;
+			
+	}
+	/**
+	 * static fields
+	 */
+	static{
+		carList = new ArrayList<Car>(); 
+		Car accord = new Accord("Honda","2013",0,200);
+		carList.add(accord);
+       	}
+	}
+
