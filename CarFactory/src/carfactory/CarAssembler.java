@@ -233,13 +233,23 @@ public class CarAssembler {
 		return car1;
 			
 	}
+	public static Car getCar(String make1) {
+		Car car2=null;
+		for (Car car : carlist) {
+			if(make1.equalsIgnoreCase(car.getMake())) {
+				car2= Car;
+			}
+		}
+	}
 	/**
 	 * static fields
 	 */
 	static{
 		carList = new ArrayList<Car>(); 
 		Car accord = new Accord("Honda","2013",0,200);
+		Car santro = new Accord("Hyundai","2013",0,201);
 		carList.add(accord);
+		carList.add(santro);
        	}
 	}
 

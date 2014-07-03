@@ -42,8 +42,8 @@ public class Client {
 //							+ "manufactured year is "+car7.getYear()+",\n Navigation system presence = "
 //							+ ""+car7.getNavigationSystem());
 		
-		CarAssembler c1= new CarAssembler();
-		c1.assemble(4);
+//		CarAssembler c1= new CarAssembler();
+//		c1.assemble(4);
 		//System.out.println(c1.toString());
 		Car car = CarAssembler.getCar("2013");
 		System.out.println(car.toString());
