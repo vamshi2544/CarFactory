@@ -7,15 +7,15 @@ package carfactory;
  */
 public class Car {
 	private String make;
-	private String model;
-	private int mileage;
+	private int model;
+	private double mileage;
 	/**
 	 * this is constructor for class car with 3 parameters
 	 * @param make1 to take brand of a car
 	 * @param model1 to know the year of manufacture
 	 * @param mileage to know what is the mileage.
 	 */
-	public Car(String make1,String model1,int mileage1) {
+	public Car(String make1,int model1,double mileage1) {
 		setMake(make1);
 		setModel(model1);
 		setMileage(mileage1);
@@ -33,18 +33,18 @@ public class Car {
 	 */
 	public Car(String make1) {
 		make = make1;
-		setModel("Basic");	//default values if only make is given
-		setMileage(20);	
+		setModel(2014);	//default values if only make is given
+		setMileage(20.22);	
 	}
 	/**
 	 * constructor with two parameters and one default value
 	 * @param make1
 	 * @param model1
 	 */
-	public Car(String make1,String model1) {
+	public Car(String make1,int model1) {
 		make=make1;
 		model=model1;
-		setMileage(20);
+		setMileage(20.22);
 	}
 	/**Getter method for make
 	 * @return the make
@@ -63,29 +63,29 @@ public class Car {
 	/**getter method for Model
 	 * @return the model
 	 */
-	public String getModel() {
+	public int getModel() {
 		return model;
 	}
 
 	/**setter method for model
 	 * @param model1 the model to set
 	 */
-	public void setModel(String model1) {
+	public void setModel(int model1) {
 		this.model = model1;
 	}
 
 	/**getter method for mileage
 	 * @return the mileage
 	 */
-	public int getMileage() {
+	public double getMileage() {
 		return mileage;
 	}
 
 	/**setter method for mileage
-	 * @param mileage the mileage to set
+	 * @param mileage1 the mileage to set
 	 */
-	public void setMileage(int mileage) {
-		this.mileage = mileage;
+	public void setMileage(double mileage1) {
+		this.mileage = mileage1;
 	}
 	
 	

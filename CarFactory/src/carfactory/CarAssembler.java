@@ -226,30 +226,42 @@ public class CarAssembler {
 	public static Car getCar(String yearOfManufactur) {
 	    Car car1 = null;
 		for(Car car:carList) {
-			if(yearOfManufactur.equalsIgnoreCase(car.getModel())) {
+			if(yearOfManufactur.equals(car.getModel())) {
 				car1 = car;
 			}
 		}
 		return car1;
 			
 	}
-	public static Car getCar(String make1) {
-		Car car2=null;
-		for (Car car : carlist) {
-			if(make1.equalsIgnoreCase(car.getMake())) {
-				car2= Car;
+	/**
+	 * 
+	 * @param make1
+	 * @return
+	 */
+	
+	public static Car getCar(int mileage) {
+		Car car1=null;
+		for (int i=0;i<carList.size();i++) {
+			if (mileage==carList.get(i).getMileage()) {
+				car1=carList.get(i);
 			}
 		}
+		return car1;
+		
 	}
 	/**
 	 * static fields
 	 */
 	static{
 		carList = new ArrayList<Car>(); 
-		Car accord = new Accord("Honda","2013",0,200);
-		Car santro = new Accord("Hyundai","2013",0,201);
+		Car accord = new Car("Honda",2013,23);
+		Car santro = new Car("Hyundai",2013,23);
+		Car vista = new Car("Tata",2014,23);
+		Car wagon = new Accord("maruthi",2010,24,200);
 		carList.add(accord);
 		carList.add(santro);
+		carList.add(vista);
+		carList.add(wagon);
        	}
 	}
 

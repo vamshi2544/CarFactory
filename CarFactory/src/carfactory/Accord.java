@@ -16,7 +16,7 @@ public class Accord extends Car {
 	 * @param model1
 	 * @param mileage1
 	 */
-	public Accord(String make1, String model1, int mileage1,int speed1) {
+	public Accord(String make1, int model1, double mileage1,int speed1) {
 		super(make1, model1, mileage1);
 		speed=speed1;
 	}

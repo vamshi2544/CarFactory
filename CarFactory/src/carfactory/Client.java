@@ -45,8 +45,10 @@ public class Client {
 //		CarAssembler c1= new CarAssembler();
 //		c1.assemble(4);
 		//System.out.println(c1.toString());
-		Car car = CarAssembler.getCar("2013");
+		Car car = CarAssembler.getCar(2013);
 		System.out.println(car.toString());
+//		Car car1= CarAssembler.getCar(23);
+		System.out.println(CarAssembler.getCar(23).toString());
 	}
 
 }
