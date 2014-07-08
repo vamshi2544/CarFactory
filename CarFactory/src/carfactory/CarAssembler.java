@@ -238,7 +238,6 @@ public class CarAssembler {
 	 * @param make1
 	 * @return
 	 */
-	
 	public static Car getCar(int mileage) {
 		Car car1=null;
 		for (int i=0;i<carList.size();i++) {

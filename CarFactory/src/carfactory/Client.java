@@ -45,6 +45,10 @@ public class Client {
 //		CarAssembler c1= new CarAssembler();
 //		c1.assemble(4);
 		//System.out.println(c1.toString());
+		/**
+		 *  based on mileage,  so there is no car that has mielage 2013, so this one return null object
+		 *  this method call public static Car getCar(int mileage)
+		 */
 		Car car = CarAssembler.getCar(2013);
 		System.out.println(car.toString());
 //		Car car1= CarAssembler.getCar(23);
