@@ -49,9 +49,9 @@ public class Client {
 		 *  based on mileage,  so there is no car that has mielage 2013, so this one return null object
 		 *  this method call public static Car getCar(int mileage)
 		 */
-		Car car = CarAssembler.getCar(2013);
+		Car car = CarAssembler.getCar("honda");
 		System.out.println(car.toString());
-//		Car car1= CarAssembler.getCar(23);
+		System.out.println(CarAssembler.getCar("maruthi"));
 		System.out.println(CarAssembler.getCar(23).toString());
 	}
 

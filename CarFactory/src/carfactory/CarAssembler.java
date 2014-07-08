@@ -223,10 +223,10 @@ public class CarAssembler {
 	 *  
 	 * @param yearOfManufactur year that car manufactured
 	 */
-	public static Car getCar(String yearOfManufactur) {
+	public static Car getCar(String makeOfcompany) {
 	    Car car1 = null;
 		for(Car car:carList) {
-			if(yearOfManufactur.equals(car.getModel())) {
+			if(makeOfcompany.equalsIgnoreCase(car.getMake())) {
 				car1 = car;
 			}
 		}
