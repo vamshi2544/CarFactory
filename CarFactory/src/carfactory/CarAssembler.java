@@ -239,13 +239,13 @@ public class CarAssembler {
 	 * @return
 	 */
 	public static ArrayList<Car> getCar(int mileage) {
-		Car car1=null;
+		
 		for (int i=0;i<carList.size();i++) {
 			if (mileage==carList.get(i).getMileage()) {
-				car1=carList.get(i);
+				Car car1 = carList.get(i);
 			}
 		}
-		return carList;
+		return car1;
 		
 	}
 	/**
