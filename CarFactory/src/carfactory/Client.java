@@ -51,7 +51,7 @@ public class Client {
 		 */
 //		Car car = CarAssembler.getCar("honda");
 //		System.out.println(car.toString());
-//		System.out.println(CarAssembler.getCar("maruthi"));
+		System.out.println(CarAssembler.getCar("maruthi"));
 		System.out.println(CarAssembler.getCar(23).toString());
 	}
 
