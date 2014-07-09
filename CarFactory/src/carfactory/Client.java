@@ -16,13 +16,11 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		/*
-		 * created 6 objects with diff parameters from car1 to car6
-		 */
-		double mileage = 12000;
+		double mileage = 23;
         ArrayList<Car> carList = CarAssembler.getCars(mileage);
-		System.out.println(CarAssembler.getCar("maruthi"));
-		System.out.println(CarAssembler.getCar(23).toString());
+        System.out.println(carList.toString());
+//		System.out.println(CarAssembler.getCar("maruthi"));
+		System.out.println(CarAssembler.getCars(23).toString());
 	}
 
 }
