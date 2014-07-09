@@ -238,7 +238,7 @@ public class CarAssembler {
 	 * @param make1
 	 * @return
 	 */
-	public static Car getCar(int mileage) {
+	public static Car getCar(double mileage) {
 		Car car1=null;
 		for (int i=0;i<carList.size();i++) {
 			if (mileage==carList.get(i).getMileage()) {
@@ -248,6 +248,20 @@ public class CarAssembler {
 		return car1;
 		
 	}
+	/**
+	 * 
+	 */
+	public static ArrayList<Car> getCars(double mileage) {
+		ArrayList<Car> carList = new ArrayList<Car>();
+		for(Car car:carList) {
+				if(car.getMileage()==mileage) {
+					carList.add(car);
+				}
+			}
+			return carList;
+				
+		}
+		
 	/**
 	 * static fields
 	 */
