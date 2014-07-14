@@ -19,9 +19,11 @@ public class PrintUtil {
 	}
 
 	public static void Print(ArrayList<Car> carList) {
-//		for (int i=0;i<carList.size();i++) {
-			System.out.println(CarAssembler.getCars(23).toString());
-//		}
+		Car car=null;
+		for (int i=0;i<carList.size();i++) {
+			System.out.println(car.toString());
+		}
+			
+		}
 		
 	}
-}

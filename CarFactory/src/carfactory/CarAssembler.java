@@ -270,12 +270,12 @@ public class CarAssembler {
 		Car accord = new Car("Honda",2013,23);
 		Car santro = new Car("Hyundai",2013,23);
 		Car vista = new Car("Tata",2014,23);
-//		Car wagon = new Accord("honda",2010,24,200);
+		Car wagon = new Accord("honda",2010,24,200);
 		Car swift = new Accord("maruthi",2014,20,150);
 		carList.add(accord);
 		carList.add(santro);
 		carList.add(vista);
-//		carList.add(wagon);
+		carList.add(wagon);
 		carList.add(swift);
        	}
 	}

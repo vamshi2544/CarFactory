@@ -18,10 +18,7 @@ public class Client {
 	public static void main(String[] args) {
 		double mileage = 23;
         ArrayList<Car> carList = CarAssembler.getCars(mileage);
-//        System.out.println(carList.toString());
-		System.out.println(CarAssembler.getCar("maruthi"));
-		System.out.println(CarAssembler.getCars(23).toString());
 		PrintUtil.Print(carList);
+		PrintUtil.Print(CarAssembler.getCars(23));
 	}
-
 }
