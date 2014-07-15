@@ -18,9 +18,13 @@ public class PrintUtil {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * @param carList
+	 */
 	public static void Print(ArrayList<Car> carList) {
-		Car car=null;
+		
 		for (int i=0;i<carList.size();i++) {
+			Car car=carList.get(i);
 			System.out.println(car.toString());
 		}
 			
