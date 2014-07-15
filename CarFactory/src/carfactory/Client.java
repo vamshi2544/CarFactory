@@ -16,9 +16,12 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		double mileage = 0;
-        ArrayList<Car> carList = CarAssembler.getCars(mileage);
-		PrintUtil.Print(carList);
+//		double mileage = 0;
+//        ArrayList<Car> carList = CarAssembler.getCars(mileage);
+//		PrintUtil.Print(carList);
+		
 		PrintUtil.Print(CarAssembler.getCars(23));
+		System.out.println(" ");
+		PrintUtil.Print(CarAssembler.getCars("maruthi"));
 	}
 }

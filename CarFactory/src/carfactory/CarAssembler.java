@@ -223,42 +223,52 @@ public class CarAssembler {
 	 *  
 	 * @param yearOfManufactur year that car manufactured
 	 */
-	public static Car getCar(String makeOfcompany) {
-	    Car car1 = null;
+//	public static Car getCar(String makeOfcompany) {
+//	    Car car1 = null;
+//		for(Car car:carList) {
+//			if(makeOfcompany.equalsIgnoreCase(car.getMake())) {
+//				car1 = car;
+//			}
+//		}
+//		return car1;
+//			
+//	}
+	public static ArrayList<Car> getCars(String makeOfcompany) {
+		ArrayList<Car> carListResult = new ArrayList<Car>();
 		for(Car car:carList) {
-			if(makeOfcompany.equalsIgnoreCase(car.getMake())) {
-				car1 = car;
+				if(car.getMake()==makeOfcompany) {
+					carListResult.add(car);
+				}
 			}
+			return carListResult;
+				
 		}
-		return car1;
-			
-	}
 	/**
 	 * 
 	 * @param make1
 	 * @return
 	 */
-	public static Car getCar(double mileage) {
-		Car car1=null;
-		for (int i=0;i<carList.size();i++) {
-			if (mileage==carList.get(i).getMileage()) {
-				 car1 = carList.get(i);
-			}
-		}
-		return car1;
-		
-	}
+//	public static Car getCar(double mileage) {
+//		Car car1=null;
+//		for (int i=0;i<carList.size();i++) {
+//			if (mileage==carList.get(i).getMileage()) {
+//				 car1 = carList.get(i);
+//			}
+//		}
+//		return car1;
+//		
+//	}
 	/**
 	 * 
 	 */
 	public static ArrayList<Car> getCars(double mileage) {
-		ArrayList<Car> carList = new ArrayList<Car>();
+		ArrayList<Car> carListResult = new ArrayList<Car>();
 		for(Car car:carList) {
 				if(car.getMileage()==mileage) {
-					carList.add(car);
+					carListResult.add(car);
 				}
 			}
-			return carList;
+			return carListResult;
 				
 		}
 		
@@ -268,15 +278,23 @@ public class CarAssembler {
 	static{
 		carList = new ArrayList<Car>(); 
 		Car accord = new Car("Honda",2013,23);
+		Car crz=new Accord("honda", 2011, 20, 180);
+		Car Insight= new Accord("honda", 2012, 22, 200);
 		Car santro = new Car("Hyundai",2013,23);
+		Car accent= new Accord("hyundai", 2010, 20, 200);
 		Car vista = new Car("Tata",2014,23);
 		Car wagon = new Accord("honda",2010,24,200);
 		Car swift = new Accord("maruthi",2014,20,150);
+		Car zen= new Accord("maruthi", 2010, 18, 150);
 		carList.add(accord);
 		carList.add(santro);
 		carList.add(vista);
 		carList.add(wagon);
 		carList.add(swift);
+		carList.add(zen);
+		carList.add(accent);
+		carList.add(Insight);
+		carList.add(crz);
        	}
 	}
 
