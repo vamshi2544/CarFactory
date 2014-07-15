@@ -25,7 +25,6 @@ public class Car {
 	 * constructor with no paramaters
 	 */
 	public Car() {
-		// TODO Auto-generated constructor stub
 	}
 	/**
 	 * constructor with single parameter and default values
@@ -89,6 +88,9 @@ public class Car {
 	}
 	
 	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	public String toString() {
 		return "CAR is made by "+make+",model is "+model+" "
 				+ ", its approximate mileage is "+mileage+" ";

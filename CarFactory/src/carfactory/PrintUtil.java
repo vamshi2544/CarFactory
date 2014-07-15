@@ -1,5 +1,5 @@
 /**
- * 
+ * This class is to print values in the client class.
  */
 package carfactory;
 
@@ -7,12 +7,12 @@ import java.util.ArrayList;
 
 /**
  * @author vamshikrishna
- *
+ * 07.10.14
  */
 public class PrintUtil {
 
 	/**
-	 * 
+	 * constructor with no parameters
 	 */
 	public PrintUtil() {
 		// TODO Auto-generated constructor stub
