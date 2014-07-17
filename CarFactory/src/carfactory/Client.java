@@ -17,8 +17,8 @@ public class Client {
 	 */
 	public static void main(String[] args) {
 		
-		PrintUtil.Print(CarAssembler.getCars(23));
-		System.out.println(" ");
+//		PrintUtil.Print(CarAssembler.getCars(23));
+//		System.out.println(" ");
 		PrintUtil.Print(CarAssembler.getCars("maruthi"));
 	}
 }

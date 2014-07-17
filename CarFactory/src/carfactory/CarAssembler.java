@@ -15,9 +15,6 @@ public class CarAssembler {
 	 */
 	
 	private static ArrayList<Car> carList;
-
-	
-	
 	/**
 	 * Empty constructor
 	 */

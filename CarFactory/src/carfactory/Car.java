@@ -9,6 +9,13 @@ public class Car {
 	private String make;
 	private int model;
 	private double mileage;
+	private double price;
+	public Car(String make1,int model1,double mileage1,double price1) {
+		setMake(make1);
+		setModel(model1);
+		setMileage(mileage1);
+		setPrice(price1);
+	}
 	/**
 	 * this is constructor for class car with 3 parameters
 	 * @param make1 to take brand of a car
@@ -95,6 +102,18 @@ public class Car {
 		return "CAR is made by "+make+",model is "+model+" "
 				+ ", its approximate mileage is "+mileage+" ";
 		
+	}
+	/**
+	 * @return the price
+	 */
+	public double getPrice() {
+		return price;
+	}
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
 }
