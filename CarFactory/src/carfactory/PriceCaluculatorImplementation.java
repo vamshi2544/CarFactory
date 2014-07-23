@@ -31,7 +31,6 @@ public class PriceCaluculatorImplementation implements PriceCalculatorService {
 		}else if (car.getMileage()>20) {
 			setPrice(2500);
 		}
-		return price ;
 	}
 
 	/**
